@@ -1,0 +1,123 @@
+html{
+	margin:0px;
+	
+}
+body{
+	margin:0px;
+	/*background-color: rgb(223, 229, 233);*/
+	
+}
+/* header */
+#header{
+	width: 100%;
+	height: 80px;
+	background-color: #C75757;
+}
+#header-content{
+	width: 1200px;
+	height: 80px;
+	margin: auto;
+}
+#logo-title{
+	height: 80px;
+	float: left; 
+}
+#logo{
+	float: left;
+	line-height: 80px;
+}
+#logo .img{
+
+}
+#sys-desc{
+	color: #FFFFCC;
+	line-height: 80px;
+	
+}
+#sys-desc span{
+	font-size: 20px;
+	font-family: "SimHei", "STSong";
+	
+	font-weight: 900;
+}
+/*  search  */
+#search{
+	margin: auto;
+	height: auto;
+	width: 700px;
+	margin-top: 30px;
+	
+}
+#input1{
+	height: 60px;
+	width: 700px;
+	font-size: 20px;
+	
+}
+#button1{
+	height: 60px;
+	width: 90px;
+	background-color: rgb(91, 192, 222);
+	color: white;
+	font-family: 'heiti-normal';
+	font-size: 20px;
+}
+.glyphicon-search::before{/*为了使搜索框前面的图标去掉*/
+	content: "";
+}
+/*  main  */
+#main{
+	width: 100%;
+	height: auto;	
+	height: 640px;
+	margin-top: 30px;
+	
+
+}
+#main-content{
+	margin: auto;
+	width: 1200px;
+	
+
+}
+.data-content{
+	width: 285px;
+	height: 461px;
+	color: white;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding-top: 5px;
+    padding-left: :5px;
+    border: 1px dotted grey;
+}
+#m-ct1-r1-co1{
+	
+}
+#m-ct1-r1-co2{
+	margin-left: 20px;
+	
+}
+#m-ct1-r1-co3{
+	margin-left: 20px;
+	
+}
+#m-ct1-r1-co4{
+	
+}
+
+.heiti-normal1{/*字体声明*/
+    font-family:"heiti-normal" !important;
+    font-size:20px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+/*字体声明*/
+@font-face {font-family: 'heiti-normal';
+    src: url('../fonts/heiti-normal/webfont.eot'); /* IE9*/
+    src: url('../fonts/heiti-normal/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/heiti-normal/webfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/heiti-normal/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/heiti-normal/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+

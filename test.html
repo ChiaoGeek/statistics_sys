@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="Scripts/jquery.js"></script>
+    <script type="text/javascript">
+        alert("Main_1>>" + "主页面script标签开始加载");
+
+        alert("Main_2>>" + ($("#htmlContainer").length > 0 ? "主页面找到htmlContainer" : "主页面未找到htmlContainer"));
+
+        $(function () {
+            alert("Main_4>>" + "主页面document.ready执行");
+            alert("Main_5>>" + ($("#htmlContainer").length > 0 ? "主页面找到htmlContainer" : "主页面未找到htmlContainer"));
+
+            $.ajax({
+                url: "PartialHtmlPage.html",
+                data: null,
+                type: "GET",
+                contentType: "text/html",
+                success: function (result) {
+                    alert("Main_6>>" + "主页面ajax已经获取到部分页html代码，开始加载部分页的html代码到主页面dom结构");
+                    $("#htmlContainer").html(result);
+                    alert("Main_7>>" + "主页面加载部分页html代码到主页面dom结构完毕");
+                },
+                error: function (result) {
+                    alert(result.statusText);
+                }
+            });
+        })
+
+        alert("Main_3>>" + "主页面script标签加载完毕");
+    </script>
+</head>
+<body>
+    <div id="htmlContainer">
+
+    </div>
+</body>
+</html>

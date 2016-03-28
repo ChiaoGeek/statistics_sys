@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>数据采集结果展示系统</title>
+	<!--  css link -->
+	<!-- 引入 Bootstrap -->
+    <link href="plugin/bootstrap/bootstrap3-3-0.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+	<!--  js  link -->
+	<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+	<!--[if lt IE 9]>
+　　　　<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+　　<![endif]-->
+	<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<!--   div header -->
+	<div id="header">
+		<div id="header-content">
+			<div id="logo-sys-desc">
+				<div id="logo"><img src="http://lab.westilian.com/falgun/images/logo-falgun.png"></div>
+				<div id="sys-desc"><span><strong>数据采集结果展示系统</strong></span></div>
+			</div>
+		</div>
+	</div>
+	<!-- div search	-->
+	<div id="search">
+		<form role="form" class="form-inline" method="post" action="http://blog.chiao.me">			
+			<div class="input-group">				
+				<input type="text" class="form-control" id="input1" placeholder="请输入搜索内容" />
+				<span class="input-group-btn">
+					<button  type="submit" name="submit" class="btn" id="button1">
+						<span class="glyphicon glyphicon-search">搜索</span>
+					</button>
+				</span>				
+			</div>			
+		</form>
+	</div>
+	<!-- div main -->
+	<div id="main">
+		<div id="main-content">
+			<div class="container-fluid" id="m-ct1">
+				<div class="row" id="m-ct1-r1">
+				  <div class="col-lg-3 data-content "  id="m-ct1-r1-co1">
+				  	<img width="50px" height="50px" src="img/icon/iconfont-zhishiwenku.png" />
+				  	<i class="heiti-normal1">文库</i>
+				  </div>
+				  <div class="col-lg-3 data-content" id="m-ct1-r1-co2">
+				  	<img width="50px" height="50px" src="img/icon/iconfont-zhishijilei.png" />
+				  	<i class="heiti-normal1">学术</i>
+				  </div> 
+				  <div class="col-lg-3 data-content" id="m-ct1-r1-co3">
+				  	<img width="50px" height="50px" src="img/icon/iconfont-wiki.png" />
+				  	<i class="heiti-normal1">百科</i>
+				  </div>
+				  <div class="col-lg-3 data-content pull-right" id="m-ct1-r1-co4">
+				  	<img width="50px" height="50px" src="img/icon/iconfont-appraisalhome2x.png" />
+				  	<i class="heiti-normal1">主页</i>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
