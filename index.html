@@ -2,10 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
 	<title>数据采集结果展示系统</title>
 	<!--  css link -->
+	<!-- 动态背景 -->
+	<link rel="stylesheet" href="plugin/juqery-background/css/style.css" />
 	<!-- 引入 Bootstrap -->
+	<link href="css/font.css" rel="stylesheet">
     <link href="plugin/bootstrap/bootstrap3-3-0.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/index.css">
 	<!--  js  link -->
@@ -18,6 +21,10 @@
 　　<![endif]-->
 	<script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	
+	<!-- 动态背景 -->
+    <script type='text/javascript' src='plugin/juqery-background/js/jquery.particleground.min.js'></script>
+  	<script type='text/javascript' src='plugin/juqery-background/js/demo.js'></script>
 
 </head>
 <body>
@@ -31,42 +38,50 @@
 		</div>
 	</div>
 	<!-- div search	-->
-	<div id="search">
-		<form role="form" class="form-inline" method="post" action="http://blog.chiao.me">			
-			<div class="input-group">				
-				<input type="text" class="form-control" id="input1" placeholder="请输入搜索内容" />
-				<span class="input-group-btn">
-					<button  type="submit" name="submit" class="btn" id="button1">
-						<span class="glyphicon glyphicon-search">搜索</span>
-					</button>
-				</span>				
-			</div>			
-		</form>
+	<div id="search-main">
+		<div id="search">
+			<form role="form" class="form-inline" method="post" action="http://blog.chiao.me">			
+				<div class="input-group">				
+					<input type="text" class="form-control" id="input1" placeholder="请输入搜索内容" />
+					<span class="input-group-btn">
+						<button  type="submit" name="submit" class="btn" id="button1">
+							<span class="glyphicon glyphicon-search">搜索</span>
+						</button>
+					</span>				
+				</div>			
+			</form>
+		</div>
 	</div>
 	<!-- div main -->
 	<div id="main">
-		<div id="main-content">
-			<div class="container-fluid" id="m-ct1">
+		
+			<div class="container" id="m-ct1">
 				<div class="row" id="m-ct1-r1">
-				  <div class="col-lg-3 data-content "  id="m-ct1-r1-co1">
-				  	<img width="50px" height="50px" src="img/icon/iconfont-zhishiwenku.png" />
-				  	<i class="heiti-normal1">文库</i>
+				  <div class="col-xs-3 data-content "  id="m-ct1-r1-co1">
+				  	<div><i class="iconfont">&#xe604;</i></div>
+				  	<div class="icon-desc"><i class="heiti-normal1">文库</i></div>
+				  	<div class="spe-content" id="spe-content1">
+
+				  	</div>
 				  </div>
-				  <div class="col-lg-3 data-content" id="m-ct1-r1-co2">
-				  	<img width="50px" height="50px" src="img/icon/iconfont-zhishijilei.png" />
-				  	<i class="heiti-normal1">学术</i>
+				  <div class="col-xs-3 data-content" id="m-ct1-r1-co2">
+				  	<div><i class="iconfont">&#xe609;</i></div>
+				  	<div class="icon-desc"><i class="heiti-normal1">学术</i></div>
+				  	<div class="spe-content" id="spe-content1"></div>
 				  </div> 
-				  <div class="col-lg-3 data-content" id="m-ct1-r1-co3">
-				  	<img width="50px" height="50px" src="img/icon/iconfont-wiki.png" />
-				  	<i class="heiti-normal1">百科</i>
+				  <div class="col-xs-3 data-content" id="m-ct1-r1-co3">
+				  	<div><i class="iconfont">&#xe601;</i></div>
+				  	<div class="icon-desc"><i class="heiti-normal1">百科</i></div>
+				  	<div class="spe-content" id="spe-content1"></div>
 				  </div>
-				  <div class="col-lg-3 data-content pull-right" id="m-ct1-r1-co4">
-				  	<img width="50px" height="50px" src="img/icon/iconfont-appraisalhome2x.png" />
-				  	<i class="heiti-normal1">主页</i>
+				  <div class="col-xs-3 data-content" id="m-ct1-r1-co4">
+				  	<div><i class="iconfont">&#xe603;</i></div>
+				  	<div class="icon-desc"><i class="heiti-normal1">主页</i></div>
+				  	<div class="spe-content" id="spe-content1"></div>
 				  </div>
 				</div>
 			</div>
-		</div>
+		
 	</div>
 </body>
 </html>

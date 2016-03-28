@@ -1,3 +1,5 @@
+
+
 html{
 	margin:0px;
 	
@@ -11,12 +13,13 @@ body{
 #header{
 	width: 100%;
 	height: 80px;
-	background-color: #C75757;
+	background-color: black;
 }
 #header-content{
 	width: 1200px;
 	height: 80px;
 	margin: auto;
+	background-color: black;
 }
 #logo-title{
 	height: 80px;
@@ -26,9 +29,7 @@ body{
 	float: left;
 	line-height: 80px;
 }
-#logo .img{
 
-}
 #sys-desc{
 	color: #FFFFCC;
 	line-height: 80px;
@@ -36,17 +37,24 @@ body{
 }
 #sys-desc span{
 	font-size: 20px;
-	font-family: "SimHei", "STSong";
-	
+	font-family: "SimHei", "STSong";	
 	font-weight: 900;
 }
 /*  search  */
-#search{
-	margin: auto;
-	height: auto;
-	width: 700px;
-	margin-top: 30px;
+#search-main{
+	background-color: #4694D1;
+	width: 100%;
+	height: 400px;
 	
+}
+#search{
+	
+	height: auto;
+	width: 700px;	
+	position: absolute;
+  	left: 290px;
+  	top: 230px;
+
 }
 #input1{
 	height: 60px;
@@ -69,55 +77,71 @@ body{
 #main{
 	width: 100%;
 	height: auto;	
-	height: 640px;
-	margin-top: 30px;
-	
+	height: 640px;	
 
 }
-#main-content{
+
+#m-ct1 .container{
+	width: 1170px !important;
 	margin: auto;
-	width: 1200px;
-	
 
 }
 .data-content{
-	width: 285px;
-	height: 461px;
 	color: white;
 	-webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    padding-top: 5px;
-    padding-left: :5px;
-    border: 1px dotted grey;
+    padding: 0px;
+    border-right: 1px dotted grey;
+    margin: auto;
+    text-align: center;
 }
 #m-ct1-r1-co1{
-	
+	margin-left: -15px;
 }
 #m-ct1-r1-co2{
-	margin-left: 20px;
+	
 	
 }
 #m-ct1-r1-co3{
-	margin-left: 20px;
+	
 	
 }
 #m-ct1-r1-co4{
-	
+	margin-right: -15px;
+	border: none;
+}
+.icon-desc{
+	margin-top: -20px;
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:150px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    color: rgb(52, 147, 213);
 }
 
 .heiti-normal1{/*字体声明*/
     font-family:"heiti-normal" !important;
-    font-size:20px;font-style:normal;
+    font-size:30px;font-style:normal;
+    font-weight: 900px;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
-    -moz-osx-font-smoothing: grayscale;}
-/*字体声明*/
-@font-face {font-family: 'heiti-normal';
-    src: url('../fonts/heiti-normal/webfont.eot'); /* IE9*/
-    src: url('../fonts/heiti-normal/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/heiti-normal/webfont.woff') format('woff'), /* chrome、firefox */
-    url('../fonts/heiti-normal/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url('../fonts/heiti-normal/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+    -moz-osx-font-smoothing: grayscale;
+    color: rgb(52, 147, 213);
 }
+.ul1-li{
+	color:rgb(163, 163, 163);
+	border: none;
+	text-align: left;
+}
+
+
+
+
+
+
+
 
